@@ -75,5 +75,34 @@ public class Main {
   }
 }
 ```
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/61f6dac3-3674-4917-9631-0e9c8f5c466c)
+```java
+public class Main {
+  public static void main(String[] args) {
+
+    int number = 51;
+
+    if(number > 50){
+      System.out.println("Number is greater than 50");
+    }else if(number < 50){
+      System.out.println("Number is less than 50");
+    }else{
+      System.out.println("Number is equal to 50");  
+    }
+
+    int number2 = 49;
+    
+    if(number2 > 50){
+      System.out.println("Number is greater than 50");
+    }else if(number2 < 50){
+      System.out.println("Number is less than 50");
+    }else{
+      System.out.println("Number is equal to 50");  
+    }
+    
+  }
+}
+```
+
 
 

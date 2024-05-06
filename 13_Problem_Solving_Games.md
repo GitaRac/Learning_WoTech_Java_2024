@@ -154,7 +154,7 @@ public class Main {
 
             // Computer's turn
             int computerPick = getComputerMove(sticks);
-            System.out.println("Computer picks " + computerPick + " sticks.");
+            System.out.println("Computer picks " + computerPick + " stick/-s.");
             sticks -= computerPick;
             System.out.println("Sticks left: " + sticks);
 
@@ -178,6 +178,8 @@ public class Main {
         // This is a winning strategy if played optimally
         else {
             int computerPick = (sticksLeft % 3 == 0) ? 2 : 1;
+            // If sticksLeft % 3 == 0 is true, computerPick is set to 2
+            // If false, computerPick is set to 1
             return computerPick;
         }
     }

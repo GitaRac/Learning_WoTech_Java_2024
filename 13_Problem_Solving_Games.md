@@ -128,7 +128,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int sticks = 21;
-        System.out.println("🥖🥖🥖 Welcome to the 21 Sticks Game! 🥖🥖🥖");
+        System.out.println("🥖🥖🥖 Welcome to 21 Sticks Game! 🥖🥖🥖");
         System.out.println("\nYou will pick first.");
 
         // Game loop

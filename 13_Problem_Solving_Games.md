@@ -188,6 +188,51 @@ public class Main {
 https://replit.com/@gracenaja/13Java21-Sticks-Game#src/main/java/Main.java
 
 ## HANGMAN
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/1e5e0df1-cc63-4825-8099-6a1a42482b0a)
+
+```java
+    public static String[] guessArray(int length) {
+        String[] guess = new String[length];
+        for (int i = 0; i < length; i++) {
+            guess[i] = "_";
+        }
+        return guess;
+    }
+
+    public static void displayState(String[] guess, int lives) {
+        System.out.println("Current Progress:   " + String.join(" ", guess));
+        System.out.println("Lives remaining: " + lives);
+    }
+
+    public static String askForLetter() {
+        System.out.print("\nGuess a letter 👉 : ");
+        return scanner.nextLine().toLowerCase();
+    }
+
+    public static boolean updateGuess(String letter, String[] word, String[] guess) {
+        boolean correct = false;
+        for (int i = 0; i < word.length; i++) {
+            if (word[i].equals(letter)) {
+                guess[i] = letter;
+                correct = true;
+            }
+        }
+        return correct;
+    }
+
+    public static boolean isWordGuessed(String[] guess) {
+        for (String letter : guess) {
+            if (letter.equals("_")) {
+                return false; // If any underscore is found
+            }
+        }
+        return true; // All letters have been guessed
+    }
+}
+```
+```
+
+
 
 
 

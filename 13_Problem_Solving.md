@@ -109,7 +109,7 @@ public class Main {
             reverse.append(lowercaseWord.charAt(i));
         }
 
-        // Convert StringBuilder back to a String
+        // Convert StringBuilder back to a String to compare
         String reversedWord = reverse.toString();
 
         // Check if the lowercase word is equal to its reversed version
@@ -118,6 +118,74 @@ public class Main {
 }
 ```
 https://replit.com/@gracenaja/13JavaPalindrome
+
+## 21 STICKS GAME
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/cc443bc5-979b-41db-8ae6-5db6e83fd3f4)
+```JAVA
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sticks = 21;
+        System.out.println("🥖🥖🥖 Welcome to the 21 Sticks Game! 🥖🥖🥖");
+        System.out.println("\nYou will pick first.");
+
+        // Game loop
+        while (true) {
+            // Player's turn
+            System.out.print("\nYour turn. Enter 1 or 2 to pick sticks: ");
+            int playerPick = scanner.nextInt();
+
+            // Validate player's input
+            while (playerPick < 1 || playerPick > 2 || playerPick > sticks) {
+                System.out.println("Invalid input. Please enter 1 or 2 (and not more than sticks left).");
+                playerPick = scanner.nextInt();
+            }
+
+            sticks -= playerPick;
+            System.out.println("Sticks left: " + sticks);
+
+            // Check if player took the last stick
+            if (sticks <= 0) {
+                System.out.println("You took the last stick. Computer wins!");
+                break;
+            }
+
+            // Computer's turn
+            int computerPick = getComputerMove(sticks);
+            System.out.println("Computer picks " + computerPick + " sticks.");
+            sticks -= computerPick;
+            System.out.println("Sticks left: " + sticks);
+
+            // Check if computer took the last stick
+            if (sticks <= 0) {
+                System.out.println("Computer took the last stick. You win!");
+                break;
+            }
+        }
+
+        scanner.close();
+    }
+
+    // Method to determine computer's optimal move
+    private static int getComputerMove(int sticksLeft) {
+        // If there are 5 sticks left, take 1 to force a win
+        if (sticksLeft == 5) {
+            return 1;
+        }
+        // Otherwise, try to leave the player with 2 or 3 sticks
+        // This is a winning strategy if played optimally
+        else {
+            int computerPick = (sticksLeft % 3 == 0) ? 2 : 1;
+            return computerPick;
+        }
+    }
+}
+```
+https://replit.com/@gracenaja/13Java21-Sticks-Game#src/main/java/Main.java
+
+## HANGMAN
 
 
 

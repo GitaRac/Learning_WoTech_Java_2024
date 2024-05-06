@@ -36,6 +36,7 @@ public class Main {
 ```
 https://replit.com/@gracenaja/13JavaMyPositionInARace#src/main/java/Main.java
 
+
 ## PRIME NUMBERS
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/94bde932-bd94-4db9-bb26-e06b3e5edd9f)
 ```java
@@ -76,6 +77,7 @@ public class Main {
 ```
 https://replit.com/@gracenaja/13JavaPrime-Nr#src/main/java/Main.java
 
+
 ## PALINDROME
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/f41fb883-1878-4efc-88e3-9d704ecb71b8)
 ```java
@@ -115,5 +117,8 @@ public class Main {
     }
 }
 ```
+https://replit.com/@gracenaja/13JavaPalindrome
+
+
 
 

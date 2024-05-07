@@ -230,7 +230,79 @@ https://replit.com/@gracenaja/13Java21-Sticks-Game#src/main/java/Main.java
     }
 }
 ```
+## ROCK PAPER SCISSORS
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/1cde9572-5625-45d6-977b-951fe538e2f4)
+```java
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("ROCK, PAPER, SCISSORS game!");
+
+        while (true) {
+            System.out.println("\nChoose your move (1, 2, 3 or 4): ");
+            System.out.println("1. Rock ✊");
+            System.out.println("2. Paper  ✋");
+            System.out.println("3. Scissors ✌️");
+            System.out.println("4. Quit");
+
+            int playerChoice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline character
+
+            if (playerChoice == 4) {
+                System.out.println("Thanks for playing!");
+                break;
+            }
+
+            if (playerChoice < 1 || playerChoice > 3) {
+                System.out.println("Invalid choice. Please try again.");
+                continue;
+            }
+            playGame(playerChoice);
+        }
+        scanner.close();
+    }
+
+    // Method to play a round
+    private static void playGame(int playerChoice) {
+        Random random = new Random();
+        int computerChoice = random.nextInt(3) + 1; // 1 (rock), 2 (paper), 3 (scissors)
+
+        System.out.println("Your choice: " + choiceToString(playerChoice));
+        System.out.println("Computer's choice: " + choiceToString(computerChoice));
+
+        // Determine the winner
+        if (playerChoice == computerChoice) {
+            System.out.println("🟡 It's a tie!");
+        } else if ((playerChoice == 1 && computerChoice == 3) ||
+                   (playerChoice == 2 && computerChoice == 1) ||
+                   (playerChoice == 3 && computerChoice == 2)) {
+            System.out.println("🟢 You win!");
+        } else {
+            System.out.println("🟠 Computer wins!");
+        }
+    }
+
+    // Method to convert choice number to string
+    private static String choiceToString(int choice) {
+        switch (choice) {
+            case 1:
+                return "Rock";
+            case 2:
+                return "Paper";
+            case 3:
+                return "Scissors";
+            default:
+                return "Invalid";
+        }
+    }
+}
 ```
+https://replit.com/@gracenaja/13Rock-Paper-Scissors#src/main/java/Main.java
+
+
 
 
 

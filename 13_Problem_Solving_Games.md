@@ -37,7 +37,9 @@ public class Main {
 }
 ```
 https://replit.com/@gracenaja/13JavaMyPositionInARace#src/main/java/Main.java
+
 Option 2 
+
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/ddd63a0d-7da0-4db2-9f3f-b4e80a9003cf)
 ```java
 /*

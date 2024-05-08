@@ -1,7 +1,7 @@
 ### 13_Java_Problem solving
 
 ## MY PLACE IN A RACE 🤾🏽‍♂️ of throwing a rock
-# Option 1
+Option 1
 
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/84db2def-7bd0-4f94-bd26-57498dde5c1f)
 ```java

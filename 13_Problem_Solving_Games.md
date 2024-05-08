@@ -1,6 +1,6 @@
 ### 13_Java_Problem solving
 
-## MY POSITION IN A RACE 🤾🏽‍♂️ of throwing a rock
+## MY PLACE IN A RACE 🤾🏽‍♂️ of throwing a rock
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/84db2def-7bd0-4f94-bd26-57498dde5c1f)
 ```java
 public class Main {
@@ -35,6 +35,38 @@ public class Main {
 }
 ```
 https://replit.com/@gracenaja/13JavaMyPositionInARace#src/main/java/Main.java
+Option 2 
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/ddd63a0d-7da0-4db2-9f3f-b4e80a9003cf)
+```java
+/*
+1. Go through the array - for loop
+2. Find a number less than our number - if
+    3. Increment index by 1 
+    4. Return index
+5. If we cant find the number that is less than our number
+    6. Return total count + 1 (because array starts with zero, but is not a place)
+*/
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {7, 5, 3, 2, 1}; // current race results
+        int number = 4; // our result
+        int place = getThePlace(arr, number);
+        System.out.println("Our place in race: " + place);
+    }
+
+    public static int getThePlace(int[] arr, int number){
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] < number){
+                return i + 1;
+            }
+        }
+        return arr.length + 1;
+    }
+}
+```
+https://replit.com/@gracenaja/14JavaPlace-in-a-Race#src/main/java/Main.java
+
+
 
 
 ## PRIME NUMBERS

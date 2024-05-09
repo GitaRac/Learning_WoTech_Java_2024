@@ -74,6 +74,9 @@ https://replit.com/@gracenaja/14JavaPlace-in-a-Race#src/main/java/Main.java
 
 
 ## PRIME NUMBERS
+
+Option 1
+
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/94bde932-bd94-4db9-bb26-e06b3e5edd9f)
 ```java
 public class Main {
@@ -112,6 +115,46 @@ public class Main {
 }
 ```
 https://replit.com/@gracenaja/13JavaPrime-Nr#src/main/java/Main.java
+
+Option 2
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/ba80d3a6-5fcb-4e9c-9915-3325b34dca14)
+
+```java
+/*
+
+1. Go through the numbers from 2 to (number - 1) 
+
+2. check whether or not it is dividable (number % i == 0)
+
+3. If the 2nd point is true then its a prime number
+
+4. If the 2nd point is false then it is not a prime number
+
+(5.Start with 2 because 0 and 1 are not prime numbers)
+
+*/
+public class Main {
+    public static void main(String[] args) {
+        for(int i = 2; i < 100; i++){
+            boolean isAPrimeNumber = isPrime(i);
+            System.out.println(i + " is a prime number - " + isAPrimeNumber);
+        }
+    }
+
+    public static boolean isPrime(int number){
+        for(int i = 2; i < number; i++){
+            if(number % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+}```
+
+https://replit.com/@gracenaja/14JavaPrime-Nr#src/main/java/Main.java
+
+
 
 
 ## PALINDROME

@@ -1,5 +1,7 @@
-Fill the 5x5 array with numbers from 1 to 25
+## Fill the 5x5 array with numbers from 1 to 25
+
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/206ecc23-f3e3-4023-a570-1cc0393874ca)
+
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -26,10 +28,13 @@ public class Main {
         }
     }
 }```
+
 https://replit.com/@gracenaja/15Java2DArrayHW1-to-25#src/main/java/Main.java
 
-Fill the array with random digits from 0 to 9
+## Fill the array with random digits from 0 to 9
+
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/91408e1f-e3e5-4b69-8711-0f8441b9b494)
+
 ```java
 import java.util.Random;
 
@@ -54,6 +59,7 @@ public class Main {
         }
     }
 }```
+
 https://replit.com/@gracenaja/15JavaRandom-Nr-Table#src/main/java/Main.java
 
 

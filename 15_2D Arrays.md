@@ -27,7 +27,8 @@ public class Main {
             System.out.println(); // Move to the next line after printing each row
         }
     }
-}```
+}
+```
 
 https://replit.com/@gracenaja/15Java2DArrayHW1-to-25#src/main/java/Main.java
 
@@ -58,7 +59,8 @@ public class Main {
             System.out.println(); // Move to the next line after printing each row
         }
     }
-}```
+}
+```
 
 https://replit.com/@gracenaja/15JavaRandom-Nr-Table#src/main/java/Main.java
 

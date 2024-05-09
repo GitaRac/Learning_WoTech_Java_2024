@@ -1,4 +1,4 @@
-### 13_Java_Problem solving
+### 13_14_Java_Problem solving
 
 ## MY PLACE IN A RACE 🤾🏽‍♂️ of throwing a rock
 Option 1

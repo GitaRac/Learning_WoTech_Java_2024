@@ -1,3 +1,96 @@
+### ONE DIMENSIONAL ARRAY
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/58497c2a-0884-4920-b796-479d625106df)
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    int[] oneDimensionalArray = {1, 2, 3};
+
+    for(int i = 0; i < oneDimensionalArray.length; i++){
+        System.out.print(oneDimensionalArray[i]);
+     }
+   }
+}
+```
+
+### TWO DIMENSIONAL ARRAY
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/e9fe110d-8229-4589-be97-c1179cedea2f)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for(int i = 0; i < array.length; i++){ 
+            //array[0] = {1, 2, 3}
+            //array[0].length = 3
+            int[] row = array[i]; // {1, 2, 3} OR {4, 5, 6}...
+            for(int j = 0; j < row.length; j++){  //PROCESSING ROWS HERE
+                System.out.print(row[j]); 
+            }
+        }  
+    }
+}
+```
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/e68918c4-709b-4a54-bcc5-48cb0e24326d)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        for(int i = 0; i < array.length; i++){ 
+        
+            int[] row = array[i]; // {1, 2, 3} OR {4, 5, 6} ...
+            for(int j = 0; j < row.length; j++){
+                System.out.print(row[j]); 
+            }
+            
+            System.out.print("|");
+        }  
+    }
+}
+```
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/3bd06b7a-21eb-4f2c-af75-f2b0853c75c9)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+        for(int i = 0; i < array.length; i++){ 
+        
+            int[] row = array[i]; // {1, 2, 3} OR {4, 5, 6} ...
+            for(int j = 0; j < row.length; j++){
+                System.out.print(row[j]); 
+            }
+            
+            System.out.println();
+        }  
+    }
+}
+```
+
+
+
+
+
+
+
 ## Fill the 5x5 array with numbers from 1 to 25
 
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/206ecc23-f3e3-4023-a570-1cc0393874ca)

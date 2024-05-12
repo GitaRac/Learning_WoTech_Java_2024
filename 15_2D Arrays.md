@@ -84,9 +84,7 @@ public class Main {
     }
 }
 ```
-
-
-
+https://replit.com/@gracenaja/15Java2DArraySimple09052024#src/main/java/Main.java
 
 
 

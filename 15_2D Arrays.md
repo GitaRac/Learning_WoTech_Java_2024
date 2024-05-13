@@ -162,8 +162,7 @@ public class Main {
             System.out.println("----------");
         }
     }
-}
-```
+}```
 https://replit.com/@gracenaja/15Java2DArrays#src/main/java/Main.java
 
 

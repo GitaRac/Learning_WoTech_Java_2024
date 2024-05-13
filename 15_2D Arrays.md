@@ -162,8 +162,42 @@ public class Main {
             System.out.println("----------");
         }
     }
-}```
+}
+```
 https://replit.com/@gracenaja/15Java2DArrays#src/main/java/Main.java
+
+## Multiplication Table
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/55c46133-19ed-4915-8643-6c29994338c4)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[10][10];
+
+        for (int i = 0; i < array.length; i++) {
+            int[] row = array[i];
+            for (int j = 0; j < row.length; j++) {
+                row[j] = i*j;
+            }
+        }
+
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+                if(array[i][j] < 10){
+                    System.out.print("  " + array[i][j]);
+                }
+                else{
+                    System.out.print(" " + array[i][j]);
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+```
+https://replit.com/@gracenaja/15JavaMultiplicationTable#src/main/java/Main.java
+
 
 
 

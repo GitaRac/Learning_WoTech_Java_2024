@@ -86,6 +86,38 @@ public class Main {
 ```
 https://replit.com/@gracenaja/15Java2DArraySimple09052024#src/main/java/Main.java
 
+## Game Board
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/abca9107-2062-4f9a-8e01-6a351b72a1a5)
+
+
+
+```java
+public class Main{
+  public static void main (String[] args) {
+
+    int[][] arr = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };   
+
+    System.out.println("Game Board: \n");
+
+    for(int i = 0; i < arr.length; i++){
+      for(int j = 0; j < arr.length; j++){
+        System.out.print(" " + arr[i][j] + " |");
+      }
+    System.out.println();
+    System.out.println("------------");
+    }
+  }
+}
+```
+https://replit.com/@gracenaja/15JavaGame-Board-Tick-Tack-Toe#src/main/java/Main.java
+
+
+
 
 
 

@@ -140,7 +140,7 @@ public class Main {
 }
 ```
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/b370c8f4-82a8-4a28-8276-e618202f0942)
-![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/7f4867a4-0469-454d-9e02-50d12b71cc60)
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/8f79a87d-b3a4-4930-a359-5554598718bd)
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/fe7f9fa6-9e76-4287-a665-ffa1f22c0ee4)
 
 ```java

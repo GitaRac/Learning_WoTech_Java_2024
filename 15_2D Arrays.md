@@ -91,7 +91,6 @@ https://replit.com/@gracenaja/15Java2DArraySimple09052024#src/main/java/Main.jav
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/abca9107-2062-4f9a-8e01-6a351b72a1a5)
 
 
-
 ```java
 public class Main{
   public static void main (String[] args) {
@@ -115,6 +114,60 @@ public class Main{
 }
 ```
 https://replit.com/@gracenaja/15JavaGame-Board-Tick-Tack-Toe#src/main/java/Main.java
+
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/92a16f29-45cd-4e74-88e4-016f9b643ea0)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[5][5];
+
+        for (int i = 0; i < array.length; i++) {
+            int[] row = array[i];
+            for (int j = 0; j < row.length; j++) {
+                row[j] = i;
+            }
+        }
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+                System.out.print(array[i][j] + "|");
+            }
+            System.out.println();
+            System.out.println("----------");
+        }
+    }
+}
+```
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/b370c8f4-82a8-4a28-8276-e618202f0942)
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/f15c9667-6469-4cb0-82f4-13827261482a)
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/fe7f9fa6-9e76-4287-a665-ffa1f22c0ee4)
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[5][5];
+
+        for (int i = 0; i < array.length; i++) {
+            int[] row = array[i];
+            for (int j = 0; j < row.length; j++) {
+                row[j] = i;  // = j    // = 1
+            }
+        }
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+                System.out.print(array[i][j] + "|");
+            }
+            System.out.println();
+            System.out.println("----------");
+        }
+    }
+}
+```
+https://replit.com/@gracenaja/15Java2DArrays#src/main/java/Main.java
+
+
+
 
 
 

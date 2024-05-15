@@ -273,6 +273,7 @@ public class Main {
 
 https://replit.com/@gracenaja/15JavaRandom-Nr-Table#src/main/java/Main.java
 
+## Fill up the every second row/column with a number 1
 
 ![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/5db490f3-24a4-4801-84fc-2c95061a647d)
 

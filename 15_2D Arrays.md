@@ -274,5 +274,41 @@ public class Main {
 https://replit.com/@gracenaja/15JavaRandom-Nr-Table#src/main/java/Main.java
 
 
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/5db490f3-24a4-4801-84fc-2c95061a647d)
+
+
+```java
+// Fill up every second row with value 1
+// Fill up every second column with value 1
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[7][7]; //  a 7x7 array
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (i % 2 == 1) { // Fill every second row  
+                    array[i][j] = 1; // with value 1
+                }
+                if (j % 2 == 1) { // Fill every second column  
+                    array[i][j] = 1; // with value 1
+                }
+            }
+        }
+        // Output 
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+https://replit.com/@gracenaja/15JavaEvery-second-RowithColumn1#src/main/java/Main.java
+
+
+
 
 

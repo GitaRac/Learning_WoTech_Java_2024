@@ -90,5 +90,123 @@ public class Main {
 ```
 
 
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/a64825da-e541-46a7-b723-1f40408fcd1c)
+
+```java
+public class Main {
+    public static void main(String[] args) { 
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+        printOutArray(arrayVoid);
+    }
+
+    public static void printOutArray(int[] array) { 
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+}
+```
+
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/cb83c067-8107-4629-86d7-a779c4b6ab43)
+
+```java
+public class Main {
+    public static void main(String[] args) { 
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+
+        int[] array = arrayVoid;
+        array[0] = 100;
+
+        printOutArray(arrayVoid);
+    }
+
+    public static void printOutArray(int[] array) { 
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+}
+```
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/4ab5c54e-076b-4534-9b5b-5000da3b378a)
+
+```java
+public class Main {
+    public static void main(String[] args) { 
+        
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+        
+        int[] array2 = new int[5];
+        array2[0] = 1;
+        array2[1] = 2;
+        array2[2] = 3;
+        array2[3] = 4;
+        array2[4] = 5;
+
+        System.out.print(arrayVoid == array2);
+        // It is comparing the references of the arrays, not the values.
+    }
+}
+```
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/93c7d061-acb1-4e1e-8d8a-49c29e508e73)
+
+``java
+public class Main {
+    public static void main(String[] args) { 
+        
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+        int[] array2 = { 1, 2, 3, 4, 5 };
+       
+        System.out.print(arrayVoid == array2);
+        // It is comparing the references of the arrays, not the values.
+    }
+}
+```
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/a4180f8a-56b5-47c3-8868-f4e71d7ca743)
+
+```java
+public class Main {
+    public static void main(String[] args) { 
+        
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+        int[] array2 = arrayVoid;
+       
+        System.out.print(arrayVoid == array2);
+        // It is comparing the references of the arrays, not the values.
+    }
+}
+```
+
+![image](https://github.com/GitaRac/Learning_WoTech_Java_2024/assets/165934633/f9e8888b-53cd-46b3-ad63-4908145e75ef)
+
+```java
+public class Main {
+    public static void main(String[] args) { 
+        
+        int[] arrayVoid = { 1, 2, 3, 4, 5 }; 
+        
+        int[] array2 = arrayVoid;
+        array2[0] = 123;
+       
+        System.out.println(arrayVoid == array2);
+        System.out.println(arrayVoid[0]);
+        System.out.println(array2[0]);
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
